@@ -31,13 +31,13 @@ Load 'AmesHousing.csv' in your Python environment.
 ## Exercise 2 - Descriptive statistics
 ### Data Understanding (continued)
 
-a. Which variables are numerical? And which are categorical? How many variables do we have of both types?
+~~a. Which variables are numerical? And which are categorical? How many variables do we have of both types?~~
 
-b. How many missing values do each of the variables have (variable completeness) and what are the variable types? Is `SalePrice` complete? (hint: use `info()`)
+~~b. How many missing values do each of the variables have (variable completeness) and what are the variable types? Is `SalePrice` complete? (hint: use `info()`)~~
 
-c. Create a frequency table counting the number of missing values per variable
+~~c. Create a frequency table counting the number of missing values per variable~~
 
-d. Conduct descriptive/summary statistics for numerical variables (e.g., mean, median, std, range) and for categorical variables (e.g., number of unique values, mode, and their frequency)
+~~d. Conduct descriptive/summary statistics for numerical variables (e.g., mean, median, std, range) and for categorical variables (e.g., number of unique values, mode, and their frequency)~~
 
 
 ## Exercise 3 - Impute missing data
@@ -45,41 +45,41 @@ d. Conduct descriptive/summary statistics for numerical variables (e.g., mean, m
 
 There a several missing values in the dataset, which need to be tackled before we can proceed with the rest of the analysis. There are many ways to impute missing values, but for now, impute missing values as follows:
 
-a. Impute the numerical variables with the median value of the available data
+~~a. Impute the numerical variables with the median value of the available data~~
 
-b1. Impute the categorical variables with the label "other"
+~~b1. Impute the categorical variables with the label "other"~~
 
-b2. Alternatively, impute the categorical variables with the mode (most frequent value) of the available data
+~~b2. Alternatively, impute the categorical variables with the mode (most frequent value) of the available data~~
 
-c. Concatenate the numerical and the categorical data into a single data frame
+~~c. Concatenate the numerical and the categorical data into a single data frame~~
 
-d. Reduce memory usage by converting string type data to category type and downcast numerical data to their smallest container size. Tip: see Pandas' [astype() method](https://pandas.pydata.org/docs/user_guide/categorical.html) and [to_numeric() method](https://pandas.pydata.org/docs/reference/api/pandas.to_numeric.html).
+~~d. Reduce memory usage by converting string type data to category type and downcast numerical data to their smallest container size. Tip: see Pandas' [astype() method](https://pandas.pydata.org/docs/user_guide/categorical.html) and [to_numeric() method](https://pandas.pydata.org/docs/reference/api/pandas.to_numeric.html).~~
 
 ## Exercise 4 - Explore the outcome variable (`SalePrice`) and how it correlates to other features
 ### Data Understanding (continued)
 
-a. Conduct descriptive/summary statistics on the Y variable (mean, median, std, range)
+~~a. Conduct descriptive/summary statistics on the Y variable (mean, median, std, range)~~
 
-b. Plot the distribution of the Y variable. What do we observe? Tip: see Altair's [histogram](https://altair-viz.github.io/gallery/simple_histogram.html)
+~~b. Plot the distribution of the Y variable. What do we observe? Tip: see Altair's [histogram](https://altair-viz.github.io/gallery/simple_histogram.html)~~
 
-c. Investigate how `Gr Liv Area` (numerical) relates to the Y variable. Tip: see Altair's [scatter plot](https://altair-viz.github.io/gallery/scatter_tooltips.html)
+~~c. Investigate how `Gr Liv Area` (numerical) relates to the Y variable. Tip: see Altair's [scatter plot](https://altair-viz.github.io/gallery/scatter_tooltips.html)~~
 
-d. Investigate how `Neighborhood` (categorical) relates to the Y variable. Tip: see Altair's [histogram](https://altair-viz.github.io/gallery/simple_histogram.html) and [boxplot](https://altair-viz.github.io/gallery/boxplot.html)
+~~d. Investigate how `Neighborhood` (categorical) relates to the Y variable. Tip: see Altair's [histogram](https://altair-viz.github.io/gallery/simple_histogram.html) and [boxplot](https://altair-viz.github.io/gallery/boxplot.html)~~
 
 
 ### Data Preparation (continued)
 
-e. Assess the distribution of `SalePrice` in exercise 4b. What did you observe? What does it mean for the performance of the prediction model? Log-transform the outcome variable
+~~e. Assess the distribution of `SalePrice` in exercise 4b. What did you observe? What does it mean for the performance of the prediction model? Log-transform the outcome variable~~
 
-f. Assess `Gr Liv Area` for all houses in exercise 4d. What do you observe? Remove outliers. What does it mean for the scope of the prediction model?
+~~f. Assess `Gr Liv Area` for all houses in exercise 4d. What do you observe? Remove outliers. What does it mean for the scope of the prediction model?~~
 
 ### Data Understanding (continued)
 
-g. Draw scatter plots between Y and each of the numerical features. Tip: see Altair's [scatter plot](https://altair-viz.github.io/gallery/scatter_tooltips.html)
+~~g. Draw scatter plots between Y and each of the numerical features. Tip: see Altair's [scatter plot](https://altair-viz.github.io/gallery/scatter_tooltips.html)~~
 
-h. Create a table showing the Pearson correlation coefficients between Y and each of the numerical variables. Tip: see [pearsonr()](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html)
+~~h. Create a table showing the Pearson correlation coefficients between Y and each of the numerical variables. Tip: see [pearsonr()](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html)~~
 
-i. Create correlation plots showing the correlations between each pair of numerical variables, incl. Y. Tip: see Seaborn's [heatmap](https://seaborn.pydata.org/generated/seaborn.heatmap.html) and [Fritz' Blog](https://fritz.ai/seaborn-heatmaps-13-ways-to-customize-correlation-matrix-visualizations/)
+~~i. Create correlation plots showing the correlations between each pair of numerical variables, incl. Y. Tip: see Seaborn's [heatmap](https://seaborn.pydata.org/generated/seaborn.heatmap.html) and [Fritz' Blog](https://fritz.ai/seaborn-heatmaps-13-ways-to-customize-correlation-matrix-visualizations/)~~
 
 ## Exercise 5 - Estimate a Linear Regression, a LASSO and a kNN model
 ### Modeling
